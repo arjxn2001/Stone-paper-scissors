@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles/10-rock-paper-scissors.css">
+</head>
+<body>
+    
+
+    <h1>Rock Paper Scissors</h1>
+    <hr style="width: 300px; margin-bottom:30px; ">
+
+    <div class="buttons">
+        <button onclick="
+        playGame('✊')
+    " class="r-p-s">✊</button>
+
+
+    <button onclick="
+       playGame('🖐️')
+    " class="r-p-s">🖐️</button>
+
+
+    <button onclick="
+      playGame('✌️');
+    " class="r-p-s">✌️</button>
+    </div>
+    
+
+    <p class="js-result result">Start⬆️</p>
+    <p class="js-moves moves">
+            You <span class="move-icon">👋</span>
+            Computer <span class="move-icon">👋</span>    
+        
+    </p>
+
+    <p class="js-score score"></p>
+
+    <div class="btnn">
+        <button onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+    " class="reset-score-btn" >Reset Score</button>
+
+    </div>
+    
+
+    <script src="scripts/10-rock-paper-scissors.js">
+        
+    </script>
+</body>
+</html>
